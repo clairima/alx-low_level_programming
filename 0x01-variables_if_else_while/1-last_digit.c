@@ -3,34 +3,27 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - enrty point
  *
- * Description: print the last digit of the number stored in the variable
+ * Description: print the value of n status:
+ *		greater than, is zero and is not less than 6.
  *
- * Return: Always 0 (Success)
+ * Return: 0 (success)
 */
 
 int main(void)
 {
-	int n;
-	int last_digit = n % 10;
+	int n, digit;
 
-	scanf("%d", &n);
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	printf("Last digit of %d is ", n);
+	digit = n % 10;
 
-	if (last_digit > 5)
-	{
-		printf("%d and is greater than 5\n", last_digit);
-	}
-	else if (last_digit == 0)
-	{
-		printf("0 and is 0\n");
-	}
-	else
-	{
-		printf("%d and is less than 6 and not 0\n", last_digit);
-	}
+	if (digit > 5)
+		printf("Last digit of %i is %i and is greater than 5\n", n, digit);
+	else if (digit == 0)
+		printf("Last digit of %i is %i and is 0\n", n, digit);
+	else if (digit < 6 && digit != 0)
+		printf("Last digit of %i is %i and is less than 6 and not 0\n", n, digit);
 	return (0);
 }
