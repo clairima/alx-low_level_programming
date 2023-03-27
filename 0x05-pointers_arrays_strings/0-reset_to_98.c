@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * main - reset_to_98 
+ * main - reset_to_98
  *
  * description: function that updates the value it points to to 98.
  *
@@ -11,11 +11,11 @@
 
 int main(void)
 {
-	int num = 10;
+	int num = 402;
 
-	printf("Before reset: %d\n", num);
+	printf("n= %d\n", num);
 	reset_to_98(&num);
-	printf("After reset: %d\n", num);
+	printf("n= %d\n", num);
 
 	return (0);
 }
