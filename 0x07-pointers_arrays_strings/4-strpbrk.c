@@ -5,28 +5,21 @@
  * _strpbrk -searches a string for any of a set of bytes.
  * @s: the string.
  * @accept: the bytes.
- * return : the pointer to the byte in s.
+ * return : the pointer to the byte in s or NULL.
  */
 
 char *_strpbrk(char *s, char *accept)
 {
 	int a, b;
-	char c;
 
-	a = 0;
-	while (s[a] != '\0')
+
+	for (a = 0; s[a] != '\0'; a++)
 	{
-		a = 0;
-		while (accept[b] != '\0')
+		for  (b = 0; accept[b] != '\0'; b++)
 		{
 			if (accept[b] == s[a])
-			{
-				c = &s[a];
-				return (c);
-			}
-			b++;
+				return (s + 1);
 		}
-		a++;
 	}
-	return (0);
+	return (NULL);
 }
