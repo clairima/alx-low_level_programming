@@ -40,6 +40,7 @@ size_t _strlen(const char *str)
 {
 	size_t i;
 
-	for (i = 0; str[i] != '\0'; i++;)
+	for (i = 0; str[i] != '\0'; i++)
+	;
 	return (i);
 }
