@@ -8,7 +8,7 @@
  */
 int add(int a, int b)
 {
-    return (a + b);
+	return (a + b);
 }
 
 /**
@@ -19,7 +19,7 @@ int add(int a, int b)
  */
 int sub(int a, int b)
 {
-    return (a - b);
+	return (a - b);
 }
 
 /**
@@ -30,17 +30,20 @@ int sub(int a, int b)
  */
 int mul(int a, int b)
 {
-    return (a * b);
+	return (a * b);
 }
 
 /**
  * div - divides two integers
  * @a: first integer
  * @b: second integer
+ * Description: The function divides the
+ * first integer `a` by the second integer `b`
+ *              and returns the quotient.
  * Return: quotient of a divided by b
  */
-int divide(int a, int b)
-{
-    return (a / b);
-}
 
+int div(int a, int b)
+{
+	return (a / b);
+}
