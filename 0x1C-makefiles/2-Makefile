@@ -17,9 +17,5 @@ clean:
 oclean:
 	-$(RM) $(OBJ
 
-fclean: oclean clean
-	
 re: fclean all
-	
-include m.h)
 
