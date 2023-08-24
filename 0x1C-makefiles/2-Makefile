@@ -15,5 +15,11 @@ clean:
 	-$(RM) *~ $(NAME)
 
 oclean:
-	-$(RM) $(OBJ)
+	-$(RM) $(OBJ
+
+fclean: oclean clean
+	
+re: fclean all
+	
+include m.h)
 
